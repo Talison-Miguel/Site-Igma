@@ -1,0 +1,59 @@
+@import '../../variables.scss';
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+    align-self: stretch;
+    text-align: left;
+    font-size: $font-size-md;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-lg;
+    color: $color-base-dark-main;
+    margin-bottom: $spacing-stack-xxxl;
+    position: relative;
+}
+
+.footer:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: $color-base-dark-main;
+    position: absolute;
+    bottom: calc(100% + $spacing-stack-sm);
+    left: 0;
+}
+
+.pFooter {
+    line-height: $line-height-lg;
+}
+
+.pcopyright {
+    text-align: right;
+    line-height: $line-height-lg;
+}
+
+@media (max-width: 1440px) {
+    .footer {
+        font-size: $font-size-xs;
+        margin: $spacing-stack-xxl 0;
+    }
+}
+
+@media (max-width: 1280px) {
+    .footer {
+        font-size: $font-size-xxs;
+        margin-bottom: $spacing-stack-xxl;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        font-size: $font-size-xxs;
+        margin: $spacing-stack-xxl 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+}

@@ -1,0 +1,148 @@
+@import '../../variables.scss';
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    padding-top: $spacing-stack-xxxl;
+}
+
+.containerimg {
+    position: relative;
+}
+
+.vectorHero {
+    position: absolute;
+    top: 50%;
+    transform: translateY(calc(-50% - 1px));
+    left: -16px;
+}
+
+.contentHero {
+    width: 663px;
+}
+
+.igma {
+    display: flex;
+    align-items: center;
+    gap: $spacing-inline-xxxs;
+    padding-bottom: $spacing-stack-xl;
+}
+
+.subtitleIgma {
+    font-size: $font-size-md;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-sm;
+    text-align: left;
+    color: $color-base-dark-main;
+}
+
+.titlecontent {
+    font-size: $font-size-xxl;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-sm;
+    color: $color-base-dark-highlight;
+    padding-bottom: $spacing-stack-md;
+}
+
+.textcontent {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-lg;
+    color: $color-base-dark-main;
+}
+
+
+@media (max-width: 1440px) {
+    .imgHero {
+        width: 422px;
+        height: 680px;
+    }
+
+    .igma {
+        padding-bottom: $spacing-stack-xl;
+    }
+
+    .contentHero {
+        width: 531px;
+    }
+
+    .containerimg {
+        height: 504px;
+    }
+
+    .subtitleIgma {
+        font-size: $font-size-xs;
+    }
+
+    .titlecontent {
+        font-size: $font-size-xl;
+    }
+
+    .textcontent {
+        font-size: $font-size-md;
+    }
+}
+
+@media (max-width: 1280px) {
+    .hero {
+        padding-top: $spacing-stack-xxl;
+    }
+
+    .imgHero {
+        width: 304px;
+        height: 504px;
+        max-width: 100%;
+    }
+
+    .contentHero {
+        width: 384px;
+    }
+
+    .imgHero {
+        width: 304px;
+        height: 504px;
+    }
+
+    .igma {
+        gap: $spacing-inline-nano;
+    }
+
+    .subtitleIgma {
+        font-size: $font-size-xxs;
+    }
+
+    .titlecontent {
+        font-size: $font-size-lg;
+        padding-bottom: $spacing-stack-xs;
+    }
+
+    .textcontent {
+        font-size: $font-size-xs;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: $spacing-stack-xxs;
+        max-width: 100%;
+    }
+
+    .imgHero {
+        width: 366px;
+        height: 560px;
+        position: absolute;
+        left: 0;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .contentHero {
+        width: 342px;
+    }
+
+    .textcontent {
+        padding-bottom: $spacing-stack-xxl;
+    }
+}

@@ -1,0 +1,65 @@
+@import '../../variables.scss';
+
+.menuLogin {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    z-index: 100;
+    width: 342px;
+    padding: $spacing-inline-sm;
+    margin-top: $spacing-stack-xxl;
+    background-color: $color-base-light-secondary;
+    border-radius: $border-radius-md;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: $font-size-lg;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-stack-xxs;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s;
+    display: none;
+}
+
+.menuLoginOpen {
+    opacity: 1;
+    display: flex;
+}
+
+.menuLoginClose {
+    opacity: 1;
+    display: flex;
+}
+
+.menuLogin::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 26px solid $color-base-light-secondary;
+    position: absolute;
+    top: -18px;
+    right: 1px;
+}
+
+.avatar {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: $border-radius-pill;
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+}
+
+.menuLogin input::placeholder {
+    font-size: $font-size-xs;
+}
+
+@media (max-width: 1280px) {
+    .avatar {
+        width: 40px;
+        height: 40px;
+    }
+}

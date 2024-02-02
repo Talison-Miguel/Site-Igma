@@ -1,0 +1,43 @@
+/* Estilos globais */
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: $font-family-base;
+    max-width: $container-desktop-g;
+    margin: 0 auto;
+}
+
+#root p {
+    margin: 0;
+}
+
+section {
+    height: 900px;
+}
+
+@media (max-width: 1440px) {
+    body {
+        max-width: $container-desktop;
+    }
+
+    section {
+        height: 800px;
+    }
+}
+
+@media (max-width: 1280px) {
+    body {
+        max-width: $container-tablet;
+    }
+
+    section {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        max-width: $container-mobile;
+    }
+}

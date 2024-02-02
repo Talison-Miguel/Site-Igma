@@ -1,0 +1,80 @@
+@import '../../variables.scss';
+
+.clients {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clientText {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-lg;
+    color: $color-base-dark-main;
+    width: 525px;
+}
+
+.logotypes {
+    width: 937px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logotypes img {
+    width: 242px;
+    height: 176px;
+}
+
+@media (max-width: 1440px) {
+    .clientText {
+        font-size: $font-size-md;
+        width: 421px;
+    }
+
+    .logotypes {
+        width: 749px;
+    }
+
+    .logotypes img {
+        width: 210px;
+        height: 153px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .clients {
+        padding: $spacing-stack-xxl 0;
+    }
+
+    .clientText {
+        font-size: $font-size-xs;
+        width: 304px;
+    }
+
+    .logotypes {
+        width: 544px;
+        justify-content: center;
+    }
+
+    .logotypes img {
+        width: 170px;
+        height: 124px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .clients {
+        flex-direction: column;
+    }
+
+    .clientText {
+        width: 100%;
+        padding-bottom: $spacing-stack-sm;
+    }
+
+    .logotypes {
+        width: 100%;
+    }
+}

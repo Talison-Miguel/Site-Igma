@@ -1,0 +1,49 @@
+@import '../../variables.scss';
+
+.btnUser {
+    vertical-align: center;
+    border-radius: $border-radius-pill;
+    background-color: $color-primary-main;
+    cursor: pointer;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    position: fixed;
+    z-index: 20;
+    
+
+    &:focus {
+        border: $border-width-thin solid $color-primary-contrast;
+        background-color: $color-primary-light;
+    }
+
+    &:hover {
+        background-color: $color-primary-light;
+    }
+    
+    &:not(:hover) {
+        background-color: $color-primary-main;
+        transition: background-color 2s;
+    }
+    
+    &:active {
+        background-color: $color-primary-dark;
+    }
+    
+    &:disabled {
+        background-color: $color-base-dark-disabled;
+        color: $color-base-light-secondary;
+        cursor: not-allowed;
+    }
+}
+
+@media (max-width: 1280px) {
+    .btnUser {
+        width: 40px;
+        height: 40px;
+    }
+}

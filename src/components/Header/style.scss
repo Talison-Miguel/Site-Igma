@@ -1,0 +1,31 @@
+@import '../../variables.scss';
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: 4px;
+    flex-wrap: wrap;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.userButton {
+    position: fixed;
+    z-index: 20;
+}
+
+.logoHeader {
+    left: 0;
+    position: fixed;
+    z-index: 20;
+}
+
+@media (max-width: 1280px) {
+    .logoHeader {
+        width: 80px;
+        height: 28px;
+    }
+}

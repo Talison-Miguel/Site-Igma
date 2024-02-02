@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.formNewsletter {
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.formNewsletter label:first-child {
+    margin-bottom: $spacing-stack-xxs;
+}
+
+.formNewsletter button {
+    margin-top: $spacing-stack-lg;
+}

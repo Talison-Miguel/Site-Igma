@@ -1,0 +1,51 @@
+@import '../../variables.scss';
+
+.btnNewsletter {
+    display: flex;
+    height: 56px;
+    min-width: 160px;   
+    width: fit-content;
+    padding: 0 16px;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-lg;
+    color: $color-base-light-contrast;
+    border-radius: $border-radius-none;
+    background-color: $color-base-dark-highlight;
+    border: $border-width-thin solid transparent;
+    cursor: pointer;
+
+    &:focus {
+        background-color: $color-base-dark-main;
+        border: $border-width-thin solid $color-primary-main;
+    }
+    
+    &:hover {
+        background-color: $color-base-dark-main;
+    }
+    
+    &:active {
+        color: $color-base-light-secondary;
+    }
+    
+    &:disabled {
+        background-color: $color-base-dark-disabled;
+        color: $color-base-light-secondary;
+        cursor: not-allowed;
+    }
+
+    &:not(:hover) {
+        background-color: $color-base-dark-highlight;
+        transition: background-color 2s;
+    }
+}
+
+@media (max-width: 1440px) {
+    .btnNewsletter {
+        font-size: $font-size-xxs;
+        min-width: 120px;
+        padding: 13px 16px;
+    }
+}

@@ -127,22 +127,32 @@
         flex-direction: column-reverse;
         padding-top: $spacing-stack-xxs;
         max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .imgHero {
-        width: 366px;
+        width: 100%;
+        object-position: bottom;
         height: 560px;
-        position: absolute;
+        // position: absolute;
         left: 0;
         max-width: 100%;
         object-fit: cover;
     }
 
     .contentHero {
-        width: 342px;
+        max-width: 100%;
+        width: auto;
     }
 
     .textcontent {
         padding-bottom: $spacing-stack-xxl;
+    }
+}
+
+@media (max-width: 400px) {
+    .imgHero {
+        width: 366px;
     }
 }

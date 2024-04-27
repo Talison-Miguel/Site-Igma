@@ -26,7 +26,7 @@
     height: 176px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1540px) {
     .clientText {
         font-size: $font-size-md;
         width: 421px;
@@ -76,5 +76,6 @@
 
     .logotypes {
         width: 100%;
+        justify-content: space-around;
     }
 }

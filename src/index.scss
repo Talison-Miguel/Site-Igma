@@ -6,6 +6,7 @@ body {
     font-family: $font-family-base;
     max-width: $container-desktop-g;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 #root p {
@@ -16,7 +17,7 @@ section {
     height: 900px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1540px) {
     body {
         max-width: $container-desktop;
     }
@@ -28,7 +29,7 @@ section {
 
 @media (max-width: 1280px) {
     body {
-        max-width: $container-tablet;
+        // max-width: $container-tablet;
     }
 
     section {
@@ -38,6 +39,14 @@ section {
 
 @media (max-width: 1024px) {
     body {
-        max-width: $container-mobile;
+        max-width: calc($container-mobile + 300px);
+    }
+}
+
+
+@media (max-width: 500px) {
+    body {
+        // max-width: $container-mobile;
+        padding: 0 30px;
     }
 }
